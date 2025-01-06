@@ -1,0 +1,161 @@
+
+header{
+    background-color:darkgray;
+}
+
+
+
+h1{
+    text-align:start;
+    margin-left:10px;
+}
+
+nav {
+   margin-left:50rem;
+   position:relative;
+   top:40px;
+}
+
+.link{
+    margin:10px;
+    background-color:lightslategrey;
+ padding:10px;
+    border:1px solid;
+    border-radius:20px;
+    color:black;
+    text-decoration:none;
+}
+
+#form{
+    background-color:darkcyan;
+}
+
+#tableau {
+    background-color: darkcyan;
+    padding:10px;
+    margin-top:10px;
+}
+
+#p_sup {
+    align-self: center;
+}
+
+#partie_id{
+    margin-right:5px;
+    position:relative;
+    top:22px;
+}
+
+#partie_adresse{
+    margin-left:5px;
+}
+
+#et{
+    margin-top:10px;
+}
+
+#save_button{
+    margin-bottom:10px;
+}
+
+#zdepartement {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#department {
+    margin-top: 10px;
+    align-self: center;
+    width: 240px;
+}
+
+
+#part-search{
+    display:flex;
+    flex-direction:row;
+    margin-top:15px;
+    margin-left:50rem;
+}
+
+#part-search input{
+    height:20px;
+    width:150px;
+}
+
+#part-show {
+    display: flex;
+    flex-direction: row;  
+    margin-left:10px;
+}
+
+#part-show select{
+    height:20px;
+    width:50px;
+    margin:10px;
+    margin-top:15px;
+}
+
+table{
+    margin-left:10rem;
+    margin-top:20px;
+}
+
+
+#part-h {
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+}
+
+.colone {
+    display: flex;
+    flex-direction: column;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead{
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+    td:last-of-type {
+        text-align: center;
+    }
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+tfoot th {
+    text-align: center;
+}
+
+
+
