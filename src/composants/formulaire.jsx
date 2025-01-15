@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import Etat from "../composants/drop_etat"
 import { addList } from '../assets/list_employer'
 import states from "../assets/list_etats"
-
+import Selector from 'composant_p14'
 
 
 function Formulaire() {
@@ -121,7 +121,7 @@ function Formulaire() {
                                 })
                             }
                         </select>
-
+                        <Selector onChange={changeetat} Id="state" Name="state" Options={states }></Selector>
                         <label htmlFor="zip-code" id="et">Zip Code</label>
                         <input className="input" id="zip-code" type="number" onChange={changezip} />
                     </fieldset>
