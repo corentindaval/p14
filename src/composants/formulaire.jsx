@@ -2,9 +2,9 @@
 import { useNavigate, Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import Etat from "../composants/drop_etat"
-import { addList } from '../assets/list_employer'
+import { addemployer } from './liste_employer'
 import states from "../assets/list_etats"
-import Selector from 'composant_p14'
+import { Selector } from 'composant_p14'
 
 
 function Formulaire() {
@@ -72,7 +72,7 @@ function Formulaire() {
         }
         console.log(data)
         if (firstname != "" & lastname != "" & birth != "" & start != "" & street != "" & city != "" & etat != "" & zip != "" & department != "" & department !="select department") {
-            dispatch(addList(data));
+            dispatch(addemployer(data));
             alert("nouvelle utilisateur enregistrer")
         } else {
             alert("veuillez remplir tous les champs")
@@ -108,20 +108,7 @@ function Formulaire() {
                         <input className="input" id="city" type="text" onChange={changecity} />
 
                         <label htmlFor="state">State</label>
-                        <select className="input" name="state" id="state" onChange={changeetat}>
-                            <option >select state</option>
-                            {
-                                 
-                                states.map((val, key) => {
-                                  
-                                        return (
-                                            <option key={key} value={val.abbreviation} >{val.name}</option>
-                                        )
-                 
-                                })
-                            }
-                        </select>
-                        <Selector onChange={changeetat} Id="state" Name="state" Options={states }></Selector>
+                        <Selector onchange={changeetat} Id="state" Name="state" Options={states}></Selector>
                         <label htmlFor="zip-code" id="et">Zip Code</label>
                         <input className="input" id="zip-code" type="number" onChange={changezip} />
                     </fieldset>

@@ -56,12 +56,38 @@ function Tableau() {
     ];
 
     const data = list
- 
+    const [rowPerPage,setRowPerPage]=useState(10);
+
+    function changerowPerPage(e) {
+        setRowPerPage(parseInt(e.target.value));
+    }
+
     return (
         <div id="tableau">
-        <DataTable
-            columns={columns}
-            data={data}
+            <h2>Current Employees</h2>
+            <div id="part-h">
+                <div id="part-show">
+                    <p>Show </p>
+                    <select onChange={changerowPerPage}>
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    <p> entries</p>
+                </div>
+                <div id="part-search">
+                    <label htmlFor="recherche">Search: </label>
+                    <input type="textbox" id="recherche"></input>
+                </div>
+            </div> 
+            <DataTable
+                columns={columns}
+                data={data}
+                pagination={true}
+                paginationRowsPerPageOptions={[10, 20, 30]}
+                paginationTotalRows={data.length}
+                paginationPerPage={rowPerPage}
             />
         </div>
     );
