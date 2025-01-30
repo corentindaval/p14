@@ -4,13 +4,13 @@ header {
 }
 
 
-
-h1{
-    text-align:start;
-    margin-left:10px;
+h1 {
+    text-align: start;
+    margin-left: 10px;
+    margin-right:40rem;
 }
 
-nav {
+nav #navp{
    margin-left:40rem;
    position:relative;
    top:40px;
@@ -19,11 +19,13 @@ nav {
 .link{
     margin:10px;
     background-color:lightslategrey;
- padding:10px;
+    padding:10px;
     border:1px solid;
     border-radius:20px;
     color:black;
     text-decoration:none;
+    position:relative;
+    top:4rem;
 }
 
 #form {
@@ -74,7 +76,8 @@ nav {
     display:flex;
     flex-direction:row;
     margin-top:15px;
-    margin-left:50rem;
+    margin-left:30rem;
+    margin-bottom:10px;
 }
 
 #part-search input{

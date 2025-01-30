@@ -7,7 +7,7 @@ function Header() {
         <header className="ligne">
             <img src={logo} />
             <h1>HRnet</h1>
-            <nav>
+            <nav id="navp">
                 <Link className="link" to="/">Create employee</Link>
                 <Link className="link" to="/registre">Current Employees</Link>
             </nav>
